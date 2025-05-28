@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ripe Origins - Contato</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" />
+    <link rel="shortcut icon" href="Ripe Origins MP002/Ripe Origins MP002/ID Visual/Logo Vetorizado.svg"
+        type="image/x-icon">
+
+    <style>
+        :root {
+            --cor1: #ffffff;
+            --cor2: #ffd552;
+            --cor3: #ff992a;
+            --cor4: #aae26a;
+            --cor5: #29ae6a;
+            --cor6: #215663;
+            --cor7: #021f30;
+        }
+
+        body {
+            background-color: var(--cor1);
+            color: var(--cor7);
+        }
+
+        header {
+            background-color: var(--cor6);
+        }
+
+        header .nav-link,
+        header .btn {
+            color: var(--cor1);
+        }
+
+        header .nav-link.link-secondary {
+            font-weight: bold;
+            color: var(--cor2);
+        }
+
+        h1,
+        h2,
+        h5 {
+            color: var(--cor6);
+        }
+
+        .btn-primary {
+            background-color: var(--cor3);
+            border-color: var(--cor3);
+        }
+
+        .btn-outline-primary {
+            border-color: var(--cor5);
+            color: var(--cor5);
+        }
+
+        .btn-outline-primary:hover {
+            background-color: var(--cor5);
+            color: #fff;
+        }
+
+        .form-control:focus {
+            border-color: var(--cor5);
+            box-shadow: 0 0 0 0.25rem rgba(41, 174, 106, 0.25);
+        }
+
+        footer {
+            background-color: var(--cor6);
+            color: var(--cor1);
+        }
+
+        footer h5 {
+            color: var(--cor2);
+        }
+
+        footer ul li {
+            color: var(--cor1);
+        }
+
+        footer label,
+        footer input {
+            color: var(--cor7);
+        }
+
+        footer .btn-primary {
+            background-color: var(--cor4);
+            border-color: var(--cor4);
+            color: var(--cor7);
+        }
+
+        section h2 {
+            background-color: var(--cor2);
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .container section {
+            margin-bottom: 2rem;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="d-flex flex-wrap align-items-center justify-content-between py-3 mb-4 border-bottom container">
+        <a href="index.html" class="d-flex align-items-center mb-2 mb-lg-0 text-dark text-decoration-none">
+            <img src="Ripe Origins MP002/Ripe Origins MP002/ID Visual/Logo Completo.png" alt="Ripe Origins Logo"
+                width="40" height="32">
+        </a>
+        <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+            <li><a href="index.html" class="nav-link px-2">Home</a></li>
+            <li><a href="cardapio.html" class="nav-link px-2">Cardápio</a></li>
+            <li><a href="Sobrenos.html" class="nav-link px-2">Sobre Nós</a></li>
+            <li><a href="contato.html" class="nav-link px-2 link-secondary">Contato</a></li>
+            <li><a href="termos.html" class="nav-link px-2">Termos de Serviço</a></li>
+        </ul>
+        <div class="col-md-3 text-end">
+            <button type="button" class="btn btn-outline-primary me-2">Login</button>
+            <button type="button" class="btn btn-primary">Sign-up</button>
+        </div>
+    </header>
+
+    <section class="container py-5">
+        <h1 class="display-4 fw-bold mb-4 text-center">Fale Conosco</h1>
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <form id="contatoForm" novalidate>
+                    <div class="mb-3">
+                        <label for="nome" class="form-label">Nome</label>
+                        <input type="text" class="form-control" id="nome" placeholder="Seu nome" required />
+                        <div class="invalid-feedback">Por favor, informe seu nome.</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">E-mail</label>
+                        <input type="email" class="form-control" id="email" placeholder="nome@exemplo.com" required />
+                        <div class="invalid-feedback">Por favor, informe um e-mail válido.</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="mensagem" class="form-label">Mensagem</label>
+                        <textarea class="form-control" id="mensagem" rows="5" placeholder="Como podemos te ajudar?"
+                            required></textarea>
+                        <div class="invalid-feedback">Por favor, escreva uma mensagem.</div>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </form>
+                <div id="sucessoMsg" class="alert alert-success mt-4 d-none" role="alert">
+                    Obrigado por entrar em contato! Responderemos em breve.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container pb-5">
+        <h2 class="fw-bold mb-4">Endereços Ripe Origins</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <h5>Sede:</h5>
+                <p>Rua Avenida Paulista, 1234 - Bela Vista, São Paulo - SP, 01310-100</p>
+
+                <h5>Franquias em São Paulo - Capital:</h5>
+                <ul>
+                    <li>Rua Augusta, 567 - Consolação, São Paulo - SP, 01305-100</li>
+                    <li>Rua Oscar Freire, 876 - Cerqueira César, São Paulo - SP, 01426-002</li>
+                    <li>Avenida Faria Lima, 1234 - Pinheiros, São Paulo - SP, 05422-001</li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <h5>Franquias em outras cidades de SP:</h5>
+                <ul>
+                    <li>Rua XV de Novembro, 432 - Centro, Campinas - SP, 13010-090</li>
+                    <li>Avenida Francisco Glicério, 765 - Cambuí, Campinas - SP, 13012-000</li>
+                    <li>Rua Marechal Deodoro, 345 - Centro, São José dos Campos - SP, 12210-140</li>
+                </ul>
+
+                <h5>Unidades previstas - RJ:</h5>
+                <ul>
+                    <li>Rua Barata Ribeiro, 678 - Copacabana, Rio de Janeiro - RJ, 22051-000 <em>(inaugura em 2
+                            semanas)</em></li>
+                    <li>Rua Visconde de Pirajá, 521 - Ipanema, Rio de Janeiro - RJ, 22410-003 <em>(inauguração em 2
+                            meses)</em></li>
+                </ul>
+
+                <h5>Unidades previstas - MG:</h5>
+                <ul>
+                    <li>Rua Paraíba, 567 - Savassi, Belo Horizonte - MG, 30130-141 <em>(inauguração em 3 semanas)</em>
+                    </li>
+                    <li>Avenida Afonso Pena, 1234 - Centro, Belo Horizonte - MG, 30130-001 <em>(inauguração em 4
+                            meses)</em></li>
+                    <li>Rua Sergipe, 987 - Funcionários, Belo Horizonte - MG, 30130-171 <em>(inauguração em 1 mês)</em>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="container pb-5">
+        <h2 class="fw-bold mb-4">O que dizem nossos clientes</h2>
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+            <div class="col">
+                <div class="border rounded p-4 shadow-sm h-100">
+                    <h5>🗣️ Maria Silva</h5>
+                    <p>A comida da Ripe Origins é simplesmente deliciosa. Eu amo a comida mexicana e eles sabem como
+                        fazer muito bem. O ambiente é aconchegante e a equipe é muito simpática. Recomendo a todos!</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="border rounded p-4 shadow-sm h-100">
+                    <h5>🗣️ João Santos</h5>
+                    <p>Eu sou um cliente fiel da Ripe Origins. Eles têm os melhores tacos que já experimentei. O
+                        ambiente é maravilhoso e o atendimento é impecável. Sempre que tenho a chance, levo meus amigos
+                        para experimentar.</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="border rounded p-4 shadow-sm h-100">
+                    <h5>🗣️ Ana Rodrigues</h5>
+                    <p>Eu fiquei muito impressionada com o serviço da Ripe Origins. Eles foram tão atenciosos e
+                        prestativos. A comida é incrível e o ambiente é muito agradável. Eu definitivamente voltarei.
+                    </p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="border rounded p-4 shadow-sm h-100">
+                    <h5>🗣️ Pedro Almeida</h5>
+                    <p>Se você está procurando comida mexicana autêntica, a Ripe Origins é o lugar certo. A equipe é
+                        muito simpática e o ambiente é descontraído. Eu amo a variedade de pratos deles e sempre saio
+                        satisfeito.</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="border rounded p-4 shadow-sm h-100">
+                    <h5>🗣️ Mariana Costa</h5>
+                    <p>Eu sou uma grande fã da Ripe Origins. Eles têm a melhor comida mexicana que já experimentei. O
+                        ambiente é muito bonito e aconchegante, e a equipe é sempre tão gentil e prestativa.
+                        Definitivamente recomendo a todos!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Unidades</h5>
+                    <ul class="list-unstyled">
+                        <li>Pindamonhangaba</li>
+                        <li>São José dos Campos</li>
+                        <li>Campinas</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <h5>Newsletter</h5>
+                    <form>
+                        <div class="mb-3">
+
+                            <label for="newsletter-email" class="form-label">Seu e-mail</label>
+                            <input type="email" class="form-control" id="newsletter-email"
+                                placeholder="nome@exemplo.com" />
+                        </div>
+                        <button type="submit" class="btn btn-primary">Cadastrar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

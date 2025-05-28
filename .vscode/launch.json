@@ -5,7 +5,8 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "type": "chrome",
+            "trace": true,
+            "type": "msedge",
             "request": "launch",
             "name": "Open PaginaInicial.html",
             "file": "c:\\Users\\gabriela.rleite2\\OneDrive - SENAC - SP\\UC15\\HTML\\Exercícios\\Ripe Origins\\PaginaInicial.html"
